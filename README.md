@@ -16,10 +16,27 @@ Acesse http://localhost:3000
 
 ```bash
 npm run build
-npm start
 ```
 
-Deploy recomendado: Vercel (sem configuração adicional).
+O projeto usa export estático (`output: "export"`). O build gera a pasta `out/`.
+
+## Deploy (GitHub Pages)
+
+- Repositório: https://github.com/nathanrib13/celimed
+- Site publicado: https://nathanrib13.github.io/celimed/
+- Publicação automática pelo workflow [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
+  a cada push na branch `main`.
+- O caminho base (`/celimed`) é injetado no build pela variável `NEXT_PUBLIC_BASE_PATH`,
+  definida pelo próprio workflow. Localmente a variável fica vazia e o site roda na raiz.
+
+### Domínio próprio
+
+Quando houver domínio (ex.: `celimed.com.br`):
+
+1. Configurar o CNAME em `Settings > Pages` do repositório.
+2. Ajustar `url` em [lib/site.ts](lib/site.ts).
+3. Remover `basePath`/`assetPrefix` de [next.config.mjs](next.config.mjs) (ou zerar
+   `NEXT_PUBLIC_BASE_PATH`), já que o domínio próprio serve a partir da raiz.
 
 ## Estrutura
 
