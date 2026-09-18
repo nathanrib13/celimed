@@ -11,33 +11,24 @@ export const site = {
   // Trocar pelo domínio próprio quando estiver disponível (ex.: https://celimed.com.br).
   url: "https://nathanrib13.github.io/celimed",
 
-  // TODO: substituir pelos dados comerciais reais.
-  whatsapp: "5599999999999",
-  whatsappLabel: "(00) 00000-0000",
-  email: "contato@celimed.com.br",
+  whatsapp: "5521995776588",
+  whatsappLabel: "+55 21 99577-6588",
+  wechatId: "+5521995776588",
+  email: "pedromaduce@gmail.com",
   location: "Brasil",
 };
 
 export type NavItem = {
   label: string;
   href: string;
-  children?: NavItem[];
 };
 
-export const solutionsNav: NavItem[] = [
-  { label: "Endoscopia & Colonoscopia", href: "/solucoes/endoscopia-colonoscopia" },
-  { label: "Ultrassom", href: "/solucoes/ultrassom" },
-  { label: "Estética Médica", href: "/solucoes/estetica-medica" },
-  { label: "Outras Soluções em Saúde", href: "/solucoes/outras-solucoes" },
-];
-
+/** Navegação por âncora: a home é uma página única com seções internas. */
 export const nav: NavItem[] = [
-  { label: "A CELIMED", href: "/a-celimed" },
-  { label: "Soluções", href: "/solucoes", children: solutionsNav },
-  { label: "Setor Público", href: "/setor-publico" },
-  { label: "Setor Privado", href: "/setor-privado" },
-  { label: "Tecnologia & Desenvolvimento", href: "/tecnologia-desenvolvimento" },
-  { label: "Contato", href: "/contato" },
+  { label: "A CELIMED", href: "/#sobre" },
+  { label: "Soluções", href: "/#solucoes" },
+  { label: "Setores", href: "/#setores" },
+  { label: "Contato", href: "/#contato" },
 ];
 
 export function whatsappLink(message?: string) {

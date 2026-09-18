@@ -22,7 +22,7 @@ function ArrowIcon() {
  */
 export function ContactDirect() {
   return (
-    <section className="u-container u-section">
+    <section id="contato" className="u-container u-section scroll-mt-24">
       <Reveal>
         <div className="relative overflow-hidden rounded-3xl bg-night p-8 text-paper md:p-14">
           <div className="grid-backdrop absolute inset-0 opacity-60" aria-hidden="true" />

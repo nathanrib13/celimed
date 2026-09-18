@@ -10,10 +10,10 @@ type CtaBandProps = {
 };
 
 export function CtaBand({
-  title = "Não encontrou a solução que procura?",
-  text = "A CELIMED acompanha continuamente novas tecnologias e equipamentos para a área da saúde. Se sua instituição possui uma demanda específica, converse com nossa equipe. Podemos analisar sua necessidade e buscar a solução adequada ao projeto.",
-  buttonLabel = "Conte o que você procura",
-  href = "/contato",
+  title = "Vamos conversar sobre a sua necessidade?",
+  text = "Conte a área de interesse ou o desafio da sua instituição. Nossa equipe responde diretamente por WhatsApp ou e-mail.",
+  buttonLabel = "Fale com a gente",
+  href = "/#contato",
 }: CtaBandProps) {
   return (
     <section className="relative overflow-hidden bg-night text-paper">
