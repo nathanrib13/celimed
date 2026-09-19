@@ -12,7 +12,9 @@ export const site = {
   url: "https://nathanrib13.github.io/celimed",
 
   whatsapp: "5521995776588",
-  whatsappLabel: "+55 21 99577-6588",
+  // Exibição visível na página, no padrão comercial brasileiro (sem +55).
+  // O "+55" só deve aparecer em identificadores técnicos (href do wa.me, WeChat ID).
+  whatsappLabel: "(21) 99577-6588",
   wechatId: "+5521995776588",
   email: "pedromaduce@gmail.com",
   location: "Brasil",

@@ -65,13 +65,17 @@ lib/
 ## O que ajustar antes de publicar
 
 1. `lib/site.ts`
-   - `whatsapp` e `whatsappLabel`: número comercial real (formato internacional, ex.: 5511999999999).
+   - `whatsapp`: número comercial real, formato internacional só para o link (`https://wa.me/...`), ex.: 5511999999999.
+   - `whatsappLabel`: mesmo número, mas no formato comercial brasileiro exibido na página, ex.: `(11) 99999-9999` (sem "+55").
+   - `wechatId`: identificador técnico do WeChat (pode manter o "+55"), usado no popover do footer e no bloco de contato.
    - `email`: e-mail comercial real.
    - `url`: domínio final.
 2. Textos das áreas: `lib/solutions.ts`.
-3. Imagens: hoje o site usa composições gráficas (linha de ECG, arcos, grades). Os pontos de
-   troca por foto estão marcados com o comentário `IMAGE SLOT` (ex.: `components/SolutionPageView.tsx`).
-   Prioridade de imagem: 1) Endoscopia/Colonoscopia, 2) Ultrassom, 3) Estética Médica.
+3. Imagens: `components/ProductVisual.tsx` usa fotos reais em `public/images/` (endoscopia.jpg,
+   ultrassom.jpg, estetica.jpg, outras-solucoes.jpg), obtidas em bancos gratuitos para uso
+   comercial (Pexels License). São fotos genéricas de equipamento/procedimento, sem marca de
+   fabricante — troque por fotografia própria da CELIMED assim que houver banco de imagens
+   próprio, mantendo os mesmos nomes de arquivo ou ajustando o mapa em `ProductVisual.tsx`.
 
 ## Contato
 

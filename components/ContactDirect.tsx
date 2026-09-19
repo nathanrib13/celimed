@@ -1,5 +1,6 @@
 import { Reveal } from "./Reveal";
 import { PulseLine } from "./PulseLine";
+import { WhatsAppIcon, WeChatIcon } from "./SocialIcons";
 import { site, whatsappLink } from "@/lib/site";
 
 function ArrowIcon() {
@@ -38,12 +39,17 @@ export function ContactDirect() {
               Atendimento comercial direto pelo WhatsApp. Conte a necessidade e a área de interesse.
             </p>
 
-            <div className="mt-10 grid gap-8 sm:grid-cols-2">
+            <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/40">
-                  WhatsApp
-                </p>
-                <p className="mt-2 font-display text-2xl tracking-[-0.02em] text-paper">
+                <div className="flex items-center gap-3">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/15 text-paper">
+                    <WhatsAppIcon />
+                  </span>
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/40">
+                    WhatsApp
+                  </p>
+                </div>
+                <p className="mt-3 font-display text-2xl tracking-[-0.02em] text-paper">
                   {site.whatsappLabel}
                 </p>
                 <a
@@ -55,6 +61,23 @@ export function ContactDirect() {
                   Abrir WhatsApp
                   <ArrowIcon />
                 </a>
+              </div>
+
+              <div>
+                <div className="flex items-center gap-3">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/15 text-paper">
+                    <WeChatIcon />
+                  </span>
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/40">
+                    WeChat
+                  </p>
+                </div>
+                <p className="mt-3 font-display text-2xl tracking-[-0.02em] text-paper">
+                  {site.wechatId}
+                </p>
+                <p className="mt-4 text-xs leading-relaxed text-white/45">
+                  Adicione pelo ID acima diretamente no aplicativo WeChat.
+                </p>
               </div>
 
               <div>
