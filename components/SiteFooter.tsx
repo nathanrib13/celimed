@@ -57,7 +57,7 @@ export function SiteFooter() {
 
             <div className="mt-2 flex items-center gap-3">
               <a
-                href={whatsappLink("Olá! Gostaria de falar com a CELIMED.")}
+                href={whatsappLink("Olá! Gostaria de falar com a Celimed.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -68,17 +68,17 @@ export function SiteFooter() {
               </a>
 
               <div className="relative">
-                <button
-                  type="button"
+                <a
+                  href="weixin://"
                   aria-label="WeChat"
-                  title="WeChat"
+                  title={`WeChat: ${site.wechatId}`}
                   aria-expanded={wechatOpen}
-                  onClick={() => setWechatOpen((v) => !v)}
+                  onClick={() => setWechatOpen(true)}
                   onBlur={() => setWechatOpen(false)}
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-paper transition-colors hover:border-brand-green hover:text-brand-green"
                 >
                   <WeChatIcon />
-                </button>
+                </a>
                 {wechatOpen && (
                   <div
                     role="tooltip"

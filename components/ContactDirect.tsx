@@ -33,7 +33,7 @@ export function ContactDirect() {
           <div className="relative">
             <span className="eyebrow on-dark">Contato</span>
             <h2 className="mt-6 max-w-2xl text-[clamp(1.8rem,3.6vw,2.7rem)] leading-tight text-paper">
-              Fale com a CELIMED
+              Fale com a Celimed
             </h2>
             <p className="mt-4 max-w-xl text-[0.98rem] leading-relaxed text-mist">
               Atendimento comercial direto pelo WhatsApp. Conte a necessidade e a área de interesse.
@@ -53,7 +53,7 @@ export function ContactDirect() {
                   {site.whatsappLabel}
                 </p>
                 <a
-                  href={whatsappLink("Olá! Gostaria de falar com a CELIMED.")}
+                  href={whatsappLink("Olá! Gostaria de falar com a Celimed.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="arrow-cta mt-4 inline-flex rounded-full bg-paper px-6 py-3.5 text-sm font-medium text-ink transition-colors hover:bg-paper/90"
@@ -72,11 +72,15 @@ export function ContactDirect() {
                     WeChat
                   </p>
                 </div>
-                <p className="mt-3 font-display text-2xl tracking-[-0.02em] text-paper">
+                <a
+                  href="weixin://"
+                  className="mt-3 block font-display text-2xl tracking-[-0.02em] text-paper transition-colors hover:text-brand-green"
+                >
                   {site.wechatId}
-                </p>
+                </a>
                 <p className="mt-4 text-xs leading-relaxed text-white/45">
-                  Adicione pelo ID acima diretamente no aplicativo WeChat.
+                  Toque para abrir o WeChat e adicione pelo ID acima. O WeChat não permite iniciar
+                  a conversa direto por um link, como o WhatsApp — é preciso buscar o ID no app.
                 </p>
               </div>
 

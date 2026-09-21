@@ -121,7 +121,7 @@ export const solutions: Solution[] = [
       },
       {
         heading: "Conformidade",
-        body: "Portfólio conforme a estratégia de desenvolvimento da CELIMED e as exigências regulatórias aplicáveis a cada equipamento.",
+        body: "Portfólio conforme a estratégia de desenvolvimento da Celimed e as exigências regulatórias aplicáveis a cada equipamento.",
       },
     ],
     applications: [
@@ -154,7 +154,7 @@ export const solutions: Solution[] = [
     blocks: [
       {
         heading: "Como funciona",
-        body: "Sua instituição apresenta a necessidade. A CELIMED analisa a demanda e busca a solução adequada ao projeto.",
+        body: "Sua instituição apresenta a necessidade. A Celimed analisa a demanda e busca a solução adequada ao projeto.",
       },
       {
         heading: "Portfólio aberto",

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 type LogoProps = {
-  /** "mark" = apenas o símbolo; "full" = símbolo + wordmark CELIMED */
+  /** "mark" = apenas o símbolo; "full" = símbolo + wordmark Celimed */
   variant?: "mark" | "full";
   /** "brand" usa o degradê; "mono" herda currentColor */
   tone?: "brand" | "mono";
@@ -10,7 +10,7 @@ type LogoProps = {
 };
 
 /**
- * Marca CELIMED reconstruída em SVG a partir do logo fornecido:
+ * Marca Celimed reconstruída em SVG a partir do logo fornecido:
  * anel "C" em degradê verde/azul, cruz médica e linha de ECG.
  * A linha de ECG é um recorte (mask) na cruz, por isso aparece
  * em qualquer fundo, inclusive no rodapé escuro.
@@ -27,7 +27,7 @@ export function Logo({
   const content = (
     <span
       className={`inline-flex items-center gap-3 ${className ?? ""}`}
-      aria-label="CELIMED"
+      aria-label="Celimed"
     >
       <svg
         width="40"
@@ -85,7 +85,7 @@ export function Logo({
             tone === "brand" ? "text-gradient" : ""
           }`}
         >
-          CELIMED
+          Celimed
         </span>
       )}
     </span>
@@ -94,7 +94,7 @@ export function Logo({
   if (!withLink) return content;
 
   return (
-    <Link href="/" className="inline-flex items-center" aria-label="CELIMED, página inicial">
+    <Link href="/" className="inline-flex items-center" aria-label="Celimed, página inicial">
       {content}
     </Link>
   );

@@ -38,12 +38,12 @@ export function SiteHeader() {
 
         <div className="hidden lg:block">
           <a
-            href={whatsappLink("Olá! Gostaria de falar com a CELIMED.")}
+            href={whatsappLink("Olá! Gostaria de falar com a Celimed.")}
             target="_blank"
             rel="noopener noreferrer"
             className="arrow-cta rounded-full bg-ink px-5 py-2.5 text-[0.82rem] font-medium text-paper transition-colors hover:bg-brand-blue"
           >
-            Fale com a CELIMED
+            Fale com a Celimed
           </a>
         </div>
 
@@ -93,12 +93,12 @@ export function SiteHeader() {
           ))}
         </nav>
         <a
-          href={whatsappLink("Olá! Gostaria de falar com a CELIMED.")}
+          href={whatsappLink("Olá! Gostaria de falar com a Celimed.")}
           target="_blank"
           rel="noopener noreferrer"
           className="arrow-cta mt-8 justify-center rounded-full bg-ink px-6 py-4 text-sm font-medium text-paper"
         >
-          Fale com a CELIMED
+          Fale com a Celimed
         </a>
       </div>
     </header>

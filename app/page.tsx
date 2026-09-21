@@ -24,7 +24,7 @@ export default function HomePage() {
               Tecnologia que conecta <span className="text-gradient">inovação e saúde.</span>
             </h1>
             <p className="mt-8 max-w-xl text-[1.1rem] leading-relaxed text-paper/85">
-              Equipamentos médicos e soluções para acompanhar a evolução da saúde. A CELIMED conecta
+              Equipamentos médicos e soluções para acompanhar a evolução da saúde. A Celimed conecta
               instituições brasileiras a tecnologias e fabricantes nacionais e internacionais.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
@@ -32,7 +32,7 @@ export default function HomePage() {
                 Conheça nossas soluções
               </PrimaryButton>
               <GhostButton href="#contato" className="border-white/25! text-paper! hover:border-white!">
-                Fale com a CELIMED
+                Fale com a Celimed
               </GhostButton>
             </div>
           </Reveal>
@@ -54,7 +54,7 @@ export default function HomePage() {
       {/* ---------- SOBRE ---------- */}
       <section id="sobre" className="u-container u-section scroll-mt-24">
         <Reveal>
-          <Eyebrow>A CELIMED</Eyebrow>
+          <Eyebrow>A Celimed</Eyebrow>
           <h2 className="mt-6 max-w-2xl text-[clamp(1.8rem,3.4vw,2.6rem)] leading-tight text-ink">
             Conectamos instituições de saúde a tecnologia médica de ponta.
           </h2>

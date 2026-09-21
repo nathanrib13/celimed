@@ -10,7 +10,7 @@ type PulseLineProps = {
 };
 
 /**
- * Motivo assinatura da CELIMED: a linha de ECG do logo, usada como
+ * Motivo assinatura da Celimed: a linha de ECG do logo, usada como
  * divisor e acento. Ocupa 100% da largura do container.
  */
 export function PulseLine({ className, mode = "draw", stroke }: PulseLineProps) {

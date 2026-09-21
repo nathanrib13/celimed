@@ -3,11 +3,11 @@
  * Ajuste os dados de contato antes de publicar.
  */
 export const site = {
-  name: "CELIMED",
-  legalName: "CELIMED",
+  name: "Celimed",
+  legalName: "Celimed",
   tagline: "Tecnologia que conecta inovação e saúde.",
   description:
-    "A CELIMED desenvolve, especifica e fornece equipamentos médicos e soluções tecnológicas para a área da saúde, conectando instituições brasileiras a fabricantes e tecnologias nacionais e internacionais.",
+    "A Celimed desenvolve, especifica e fornece equipamentos médicos e soluções tecnológicas para a área da saúde, conectando instituições brasileiras a fabricantes e tecnologias nacionais e internacionais.",
   // Trocar pelo domínio próprio quando estiver disponível (ex.: https://celimed.com.br).
   url: "https://nathanrib13.github.io/celimed",
 
@@ -16,7 +16,7 @@ export const site = {
   // O "+55" só deve aparecer em identificadores técnicos (href do wa.me, WeChat ID).
   whatsappLabel: "(21) 99577-6588",
   wechatId: "+5521995776588",
-  email: "pedromaduce@gmail.com",
+  email: "pedrocelimed@gmail.com",
   location: "Brasil",
 };
 
@@ -27,7 +27,7 @@ export type NavItem = {
 
 /** Navegação por âncora: a home é uma página única com seções internas. */
 export const nav: NavItem[] = [
-  { label: "A CELIMED", href: "/#sobre" },
+  { label: "A Celimed", href: "/#sobre" },
   { label: "Soluções", href: "/#solucoes" },
   { label: "Setores", href: "/#setores" },
   { label: "Contato", href: "/#contato" },

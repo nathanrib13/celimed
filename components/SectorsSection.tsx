@@ -31,8 +31,7 @@ const sectors: Sector[] = [
     eyebrow: "Setor Privado",
     title: "Hospitais, clínicas e centros médicos",
     paragraphs: [
-      "Desenvolvemos relações comerciais com instituições privadas de diferentes portes e especialidades, compreendendo as características técnicas, assistenciais e econômicas de cada operação.",
-      "A proposta é construir relações duradouras, baseadas em tecnologia, qualidade, suporte e confiabilidade.",
+      "Atendemos instituições privadas de todos os portes, com relações comerciais duradouras baseadas em tecnologia, qualidade e suporte contínuo.",
     ],
     items: [
       "Hospitais",
@@ -43,14 +42,13 @@ const sectors: Sector[] = [
       "Clínicas de estética médica",
     ],
     buttonLabel: "Falar com o setor comercial",
-    whatsappMessage: "Olá! Sou de uma instituição privada e gostaria de falar com o setor comercial da CELIMED.",
+    whatsappMessage: "Olá! Sou de uma instituição privada e gostaria de falar com o setor comercial da Celimed.",
   },
   {
     eyebrow: "Setor Público",
     title: "Saúde pública e instituições do SUS",
     paragraphs: [
-      "Atendemos às necessidades da administração pública e das instituições integrantes do sistema de saúde brasileiro, incluindo hospitais públicos, prefeituras e secretarias de saúde.",
-      "Cada processo é conduzido considerando os requisitos técnicos, administrativos e regulatórios aplicáveis à contratação pública.",
+      "Atendemos hospitais públicos, prefeituras e secretarias de saúde, conduzindo cada processo conforme os requisitos técnicos e regulatórios da contratação pública.",
     ],
     items: [
       "Hospitais públicos",
@@ -61,7 +59,7 @@ const sectors: Sector[] = [
       "Demais órgãos públicos",
     ],
     buttonLabel: "Falar com o setor institucional",
-    whatsappMessage: "Olá! Represento um órgão público e gostaria de falar com o setor institucional da CELIMED.",
+    whatsappMessage: "Olá! Represento um órgão público e gostaria de falar com o setor institucional da Celimed.",
   },
 ];
 
