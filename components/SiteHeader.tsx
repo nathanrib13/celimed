@@ -53,32 +53,6 @@ export function SiteHeader() {
               Fale com a Celimed
             </a>
           </div>
-
-          <button
-            type="button"
-            aria-label={open ? "Fechar menu" : "Abrir menu"}
-            aria-expanded={open}
-            onClick={() => setOpen((v) => !v)}
-            className="relative z-50 flex h-10 w-10 items-center justify-center text-ink lg:hidden"
-          >
-            <span className="relative block h-3.5 w-6">
-              <span
-                className={`absolute left-0 block h-[1.5px] w-6 bg-current transition-all duration-300 ${
-                  open ? "top-1.5 rotate-45" : "top-0"
-                }`}
-              />
-              <span
-                className={`absolute left-0 top-1.5 block h-[1.5px] w-6 bg-current transition-all duration-300 ${
-                  open ? "opacity-0" : "opacity-100"
-                }`}
-              />
-              <span
-                className={`absolute left-0 block h-[1.5px] w-6 bg-current transition-all duration-300 ${
-                  open ? "top-1.5 -rotate-45" : "top-3"
-                }`}
-              />
-            </span>
-          </button>
         </div>
       </div>
 
@@ -109,6 +83,38 @@ export function SiteHeader() {
           Fale com a Celimed
         </a>
       </div>
+
+      {/* Botao hamburguer/fechar (X) fica fora do wrapper com backdrop-blur
+          de propósito: filter cria um novo stacking context, e um z-index
+          "por dentro" dele não consegue superar o z-40 do menu mobile (que
+          é irmão desse wrapper, não filho) — o X ficava visualmente ali mas
+          preso atrás do painel, sem clicar. Como position:fixed próprio,
+          fica sempre acima do overlay (z-50 > z-40) e clicável pra fechar. */}
+      <button
+        type="button"
+        aria-label={open ? "Fechar menu" : "Abrir menu"}
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+        className="fixed right-6 top-4 z-50 flex h-10 w-10 items-center justify-center text-ink lg:hidden"
+      >
+        <span className="relative block h-3.5 w-6">
+          <span
+            className={`absolute left-0 block h-[1.5px] w-6 bg-current transition-all duration-300 ${
+              open ? "top-1.5 rotate-45" : "top-0"
+            }`}
+          />
+          <span
+            className={`absolute left-0 top-1.5 block h-[1.5px] w-6 bg-current transition-all duration-300 ${
+              open ? "opacity-0" : "opacity-100"
+            }`}
+          />
+          <span
+            className={`absolute left-0 block h-[1.5px] w-6 bg-current transition-all duration-300 ${
+              open ? "top-1.5 -rotate-45" : "top-3"
+            }`}
+          />
+        </span>
+      </button>
     </header>
   );
 }
